@@ -10,8 +10,8 @@ x <- seq(as.POSIXct("2007-02-01 00:00:00"), by="mins", length.out=24*60*2)
 with(data, {
         plot(x, Sub_metering_1, ylab = "Energy sub metering", 
              xlab = "", type = "l")
-        lines(x, Sub_metering_2, xlab = "", type = "l", col = "red")
-        lines(x, Sub_metering_3, xlab = "", type = "l", col = "blue")
+        lines(x, Sub_metering_2, col = "red")
+        lines(x, Sub_metering_3, col = "blue")
 })
 
 legend("topright", col = c("black", "red", "blue"), 

@@ -21,8 +21,8 @@ with(data, {
         #Plot bottomleft
         plot(x, Sub_metering_1, ylab = "Energy sub metering", 
              xlab = "", type = "l")
-        lines(x, Sub_metering_2, xlab = "", type = "l", col = "red")
-        lines(x, Sub_metering_3, xlab = "", type = "l", col = "blue")
+        lines(x, Sub_metering_2, col = "red")
+        lines(x, Sub_metering_3, col = "blue")
         legend("topright", col = c("black", "red", "blue"), 
                legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
                bty = "n", lty = 1)
